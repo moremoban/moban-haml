@@ -1,0 +1,9 @@
+%html
+    %body
+        %div
+            Tag Content
+        %ul
+            -for user in users:
+                %li << {{ user }}
+            -else:
+                %li << No users
