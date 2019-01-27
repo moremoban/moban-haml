@@ -24,3 +24,16 @@ def test_haml_file_tests():
             content = output_file.read()
             eq_(content, expected)
     os.unlink(output)
+
+
+def test_haml_string_template():
+    string_template = "{{ content }}"
+    output = "test.txt"
+    path = os.path.join("tests", "fixtures", "haml_tests")
+    engine = BaseEngine([path], path, EngineHaml)
+    engine.render_string_to_file(string_template, "file_tests.json", output)
+    with open(output, "r") as output_file:
+        expected = "Hello World!"
+        content = output_file.read()
+        eq_(content, expected)
+    os.unlink(output)
