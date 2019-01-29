@@ -2,7 +2,7 @@ import os
 
 from nose.tools import eq_
 from moban.plugins import ENGINES, BaseEngine
-from moban_haml.engine import EngineHaml
+from moban_haml.engine import EngineHaml, is_extension_list_valid
 
 
 def test_haml_engine_type():
@@ -37,3 +37,20 @@ def test_haml_string_template():
         content = output_file.read()
         eq_(content, expected)
     os.unlink(output)
+
+
+def test_extensions_validator():
+    test_fixtures = [None, ["module1", "module2"], []]
+    expected = [False, True, False]
+    actual = []
+    for fixture in test_fixtures:
+        actual.append(is_extension_list_valid(fixture))
+    eq_(expected, actual)
+
+
+def test_include_extensions():
+    extensions = ["jinja2.ext.with_"]
+    engine = EngineHaml("foo", extensions)
+    actual = engine.jj2_env.extensions
+    expected = "jinja2.ext.WithExtension"
+    assert expected in actual
