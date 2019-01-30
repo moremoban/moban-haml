@@ -1,0 +1,9 @@
+name: moban-haml
+organisation: moremoban
+releases:
+- changes:
+  - action: First release
+    details:
+    - Render .haml, .Haml files for moban
+  date: 29-01-2019
+  version: 0.0.1

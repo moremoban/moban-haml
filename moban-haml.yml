@@ -1,14 +1,13 @@
 name: "moban-haml"
 organisation: "moremoban"
 author: "Ayan Banerjee, C.W et al"
-contact: ""
-company: ""
+contact: "wangc_2011@hotmail.com"
+company: "Moremoban dev team and its contributors"
 version: "0.0.1"
 current_version: "0.0.1"
-release: "0.0.0"
+release: "0.0.1"
 copyright_year: 2019
 command_line_interface: "moban"
-entry_point: "moban_haml.main:main"
 license: MIT
 dependencies: ["pyhaml", "lml>=0.0.7", "Hamlish-Jinja",]
 description: "Provide haml templating capability to moban"
