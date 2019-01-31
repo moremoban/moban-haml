@@ -9,14 +9,22 @@ moban-haml
    :target: https://codecov.io/github/moremoban/moban-haml
 
 
-.. image:: https://readthedocs.org/projects/moban-haml/badge/?version=latest
-   :target: http://moban-haml.readthedocs.org/en/latest/
 
+With `hamlish-jinja2` for Python 3, this library allows moban users to have haml
+template in their next documentation endeavour. 
 
 Installation
 ================================================================================
 
-You can get it:
+
+You can install moban-haml via pip:
+
+.. code-block:: bash
+
+    $ pip install moban-haml
+
+
+or clone it and install it:
 
 .. code-block:: bash
 

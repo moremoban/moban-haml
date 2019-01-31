@@ -1,1 +1,9 @@
 {% extends 'README.rst.jj2' %}
+
+{% block documentation_link %}
+{% endblock %}
+
+{% block features %}
+With `hamlish-jinja2` for Python 3, this library allows moban users to have haml
+template in their next documentation endeavour. 
+{% endblock %}
