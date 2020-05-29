@@ -7,6 +7,13 @@ name = 'pypi'
 python_version= '3.6'
 
 [packages]
-    pyhaml = "*"
-    lml>=0.0.7
-    Hamlish-Jinja = "*"
+pyhaml = "*"
+lml = '>=0.0.7'
+Hamlish-Jinja = "*"
+
+[dev-packages]
+nose = "*"
+mock = "*"
+codecov = "*"
+coverage = "*"
+flake8 = "*"

@@ -7,7 +7,14 @@ moban-haml
 
 .. image:: https://codecov.io/github/moremoban/moban-haml/coverage.png
    :target: https://codecov.io/github/moremoban/moban-haml
+.. image:: https://badge.fury.io/py/moban-haml.svg
+   :target: https://pypi.org/project/moban-haml
 
+.. image:: https://pepy.tech/badge/moban-haml/month
+   :target: https://pepy.tech/project/moban-haml/month
+
+.. image:: https://img.shields.io/github/stars/moremoban/moban-haml.svg?style=social&maxAge=3600&label=Star
+    :target: https://github.com/moremoban/moban-haml/stargazers
 
 
 With `hamlish-jinja2` for Python 3, this library allows moban users to have haml
